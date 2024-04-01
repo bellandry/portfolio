@@ -8,7 +8,9 @@ const ContactPage = () => {
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}>
-      About
+      <div className="h-full w-full flex items-center justify-center">
+        <p className="text-2xl">En cours de développement...</p>
+      </div>
     </motion.div>
   );
 }

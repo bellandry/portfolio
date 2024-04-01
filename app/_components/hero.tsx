@@ -11,20 +11,24 @@ const HeroPage = () => {
       <div className="h-1/2 flex flex-col items-center justify-center md:h-full md:w-3/5 md:items-start">
         <p className="text-xl font-bold pb-4"> - Landry BELLA - </p>
         <div className="flex flex-col gap-4 md:gap-12">
-          <h1 className="text-4xl font-bold md:text-6xl text-center md:text-start">Développeur Web Fullstack</h1>
-          <p className="md:text-xl text-center md:text-left">Hello ! Je suis Landry Bella, Expert en développement web et passioné de développement mobile, basé au Cameroun</p>
+          <h1 className="text-4xl font-bold md:text-6xl text-center md:text-start">Développeur Web Full Stack</h1>
+          <p className="text-md md:text-xl text-center md:text-left">Hello ! Je suis Landry BELLA, développeur Full Stack passionné. Avec plus de 5 années d'expérience et une expertise dans un large éventail de technologies, je transforme vos idées en solutions numériques innovantes. </p>
           <div className="flex gap-4 items-center justify-center md:justify-start">
-            <button className="p-4 rounded-md ring-1 ring-white bg-white text-black hover:bg-black hover:text-white transition-all">Mes réalisations</button>
-            <button className="p-4 rounded-md ring-1 ring-white hover:bg-white hover:text-black transition-all">Me contacter</button>
+            <Link href="/portfolio">
+              <button className="p-4 rounded-md ring-1 ring-white bg-white text-black hover:bg-black hover:text-white transition-all">Mes réalisations</button>
+            </Link>
+            <Link href="/contact">
+              <button className="p-4 rounded-md ring-1 ring-white hover:bg-white hover:text-black transition-all">Me contacter</button>
+            </Link>
           </div>
           <div className="flex gap-4 items-center justify-center md:justify-start">
-            <Link className="hover:text-black hover:bg-white rounded-md p-1 transition-all" href="#">
+            <Link target="_blank" className="hover:text-black hover:bg-white rounded-md p-1 transition-all" href="https://gitlab.com/bellandry.work">
               <Gitlab className="w-6 h-6" />
             </Link>
-            <Link className="hover:text-black hover:bg-white rounded-md p-1 transition-all" href="#">
+            <Link target="_blank" className="hover:text-black hover:bg-white rounded-md p-1 transition-all" href="https://linkedin.com/in/bellandry">
               <Linkedin className="w-6 h-6" />
             </Link>
-            <Link className="hover:text-black hover:bg-white rounded-md p-1 transition-all" href="#">
+            <Link target="_blank" className="hover:text-black hover:bg-white rounded-md p-1 transition-all" href="https://facebook.com/LaclassWebDev">
               <Facebook className="w-6 h-6" />
             </Link>
           </div>
