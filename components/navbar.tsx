@@ -2,7 +2,6 @@
 
 import NavLinks from "@/app/_components/navlinks";
 import { motion } from "framer-motion";
-import { Gitlab, Linkedin } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -83,14 +82,7 @@ const Navbar = () => {
           />
         </div>
       </div>
-      <div className="flex items-center gap-x-3 text-white">
-        <Link className="hover:text-black hover:bg-white rounded-md p-1 transition-all" href="#">
-          <Gitlab className="w-6 h-6" />
-        </Link>
-        <Link className="hover:text-black hover:bg-white rounded-md p-1 transition-all" href="#">
-          <Linkedin className="w-6 h-6" />
-        </Link>
-      </div>
+      <button className="hidden md:block px-4 py-3 rounded-md ring-1 ring-white hover:bg-white hover:text-black transition-all">Me contacter</button>
       <div className="md:hidden">
         <button
           className="w-10 h-6 flex flex-col justify-between z-20 relative"
