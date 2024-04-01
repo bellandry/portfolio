@@ -9,7 +9,10 @@ export const metadata: Metadata = {
   title: "Laclass Dev - Portfolio",
   description: "Développeur Web Avec plus de 5 années d'expériences professionnelles et une expertise dans un large éventail de technologies",
   icons: {
-    icon: "/favicon.png",
+    icon: {
+      url: "/favicon.png",
+      href: "/favicon.png"
+    }
   },
 };
 
@@ -21,7 +24,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`bg-black text-white ${inter.className}`}>
-        <link rel="icon" href="/favicon.png" sizes="any" />
         <TransitionProvider>{children}</TransitionProvider>
       </body>
     </html>
