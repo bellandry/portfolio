@@ -12,7 +12,7 @@ const HeroPage = () => {
         <p className="text-xl font-bold pb-4"> - Landry BELLA - </p>
         <div className="flex flex-col gap-4 md:gap-12">
           <h1 className="text-4xl font-bold md:text-6xl text-center md:text-start">Développeur Web Full Stack</h1>
-          <p className="text-md md:text-xl text-center md:text-left">Hello ! Je suis Landry BELLA, développeur Full Stack passionné. Avec plus de 5 années d'expérience et une expertise dans un large éventail de technologies, je transforme vos idées en solutions numériques innovantes. </p>
+          <p className="text-md md:text-xl text-center md:text-left">Hello ! Je suis Landry BELLA, développeur Full Stack passionné. Avec plus de 5 années d&apos;expérience et une expertise dans un large éventail de technologies, je transforme vos idées en solutions numériques innovantes. </p>
           <div className="flex gap-4 items-center justify-center md:justify-start">
             <Link href="/portfolio">
               <button className="p-4 rounded-md ring-1 ring-white bg-white text-black hover:bg-black hover:text-white transition-all">Mes réalisations</button>
