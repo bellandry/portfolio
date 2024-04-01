@@ -34,9 +34,9 @@ const AboutPage = () => {
   const containerRef = useRef(null)
   const { scrollYProgress } = useScroll({ container: containerRef })
   const skillRef = useRef(null)
-  const isSkillRefInView = useInView(skillRef, { margin: "-30px" })
+  const isSkillRefInView = useInView(skillRef)
   const experienceRef = useRef(null)
-  const isExperienceRefInView = useInView(experienceRef, { margin: "-30px" })
+  const isExperienceRefInView = useInView(experienceRef)
 
   return (
     <motion.div
@@ -44,7 +44,7 @@ const AboutPage = () => {
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}>
-      <div className="flex justify-between h-full overflow-y-scroll" ref={containerRef}>
+      <div className="flex justify-between h-full overflow-y-scroll overflow-hidden bg-gradient-radial from-gray-950 to-black" ref={containerRef}>
         <div className="p-4 md:p-12 lg:p-20 xl:p-56 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 w-full md:1/2">
           <div className="flex flex-col gap-12 justify-center">
             <h1 className="font-bold text-2xl">Biographie</h1>

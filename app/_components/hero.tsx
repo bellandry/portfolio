@@ -1,4 +1,4 @@
-import { Gitlab, Linkedin } from "lucide-react";
+import { Facebook, Gitlab, Linkedin } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -23,6 +23,9 @@ const HeroPage = () => {
             </Link>
             <Link className="hover:text-black hover:bg-white rounded-md p-1 transition-all" href="#">
               <Linkedin className="w-6 h-6" />
+            </Link>
+            <Link className="hover:text-black hover:bg-white rounded-md p-1 transition-all" href="#">
+              <Facebook className="w-6 h-6" />
             </Link>
           </div>
         </div>
