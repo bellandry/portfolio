@@ -85,7 +85,7 @@ const Navbar = () => {
       <button className="hidden md:block px-4 py-3 rounded-md ring-1 ring-white hover:bg-white hover:text-black transition-all">Me contacter</button>
       <div className="md:hidden">
         <button
-          className="w-10 h-6 flex flex-col justify-between z-20 relative"
+          className="w-10 h-6 flex flex-col justify-between z-40 relative"
           onClick={() => setOpen((current) => !current)}
         >
           <motion.div
@@ -111,7 +111,7 @@ const Navbar = () => {
               stiffness: 260,
               damping: 30
             }}
-            className="absolute z-10 top-0 left-0 w-full h-full bg-gradient-radial from-gray-950 to-black flex flex-col text-4xl items-center justify-center">
+            className="absolute z-30 top-0 left-0 w-full h-full bg-gradient-radial from-gray-950 to-black flex flex-col text-4xl items-center justify-center">
             <motion.div
               variants={itemVariants}
               className="gap-y-8 flex text-yellow-50 flex-col items-center justify-center"
