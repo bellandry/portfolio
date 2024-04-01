@@ -20,7 +20,8 @@ const skills = [
   { id: 12, skill: "Mongoose" },
   { id: 13, skill: "SCSS" },
   { id: 14, skill: "Tailwind CSS" },
-  { id: 15, skill: "Framer Motion" }
+  { id: 15, skill: "Framer Motion" },
+  { id: 16, skill: "Git" }
 ]
 
 const experiences = [
