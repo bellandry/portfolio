@@ -22,7 +22,7 @@ const ContactPage = () => {
     if (form.current) {
       emailjs
         .sendForm(process.env.NEXT_PUBLIC_SERVICE_ID ?? "", process.env.NEXT_PUBLIC_TEMPLATE_ID ?? "", form.current, {
-          publicKey: process.env.NEXT_PUBLIC_PUBLIC_KEY ?? "",
+          publicKey: process.env.NEXT_PUBLIC_PUBLIC_ID ?? "",
         })
         .then(
           () => {
