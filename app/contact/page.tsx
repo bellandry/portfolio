@@ -15,7 +15,7 @@ const ContactPage = () => {
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}>
       <div className="h-full w-full flex flex-col lg:flex-row items-center justify-center p-4 md:px-12 md:py-10 lg:px-20 lg:py-16 xl:px-56 xl:py-40 bg-gradient-to-b from-black to-gray-900">
-        <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col items-center justify-center text-6xl font-semibold">
+        <div className="h-1/5 lg:h-full lg:w-1/2 flex flex-col items-center justify-center text-2xl md:text-4xl lg:text-6xl font-semibold">
           <motion.div
 
           >
@@ -24,14 +24,14 @@ const ContactPage = () => {
                 key={index}
                 initial={{ opacity: 1 }}
                 animate={{ opacity: 0 }}
-                transition={{ duration: 3, repeat: Infinity, delay: index * 0.2 }}
+                transition={{ duration: 3, repeat: Infinity, delay: index * 0.1 }}
               >
                 {letter}
               </motion.span>
             ))} 👋
           </motion.div>
         </div>
-        <form className="h-1/2 lg:h-full lg:w-1/2 bg-gradient-to-l from-black to-gray-900 flex flex-col gap-8 justify-center p-20 rounded-xl">
+        <form className="h-4/5 lg:h-full w-full lg:w-1/2 bg-gradient-to-l from-black to-gray-900 flex flex-col gap-8 justify-center p-10 md:p-20 rounded-xl">
           <span>Salut Landry, </span>
           <textarea rows={6} className="bg-transparent border-b-2 border-b-gray-600 resize-none outline-none" />
           <span>Mon adresse mail est :</span>
