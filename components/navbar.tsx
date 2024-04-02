@@ -1,8 +1,8 @@
 "use client"
 
 import NavLinks from "@/app/_components/navlinks";
+import SocialMedias from "@/app/_components/social-medias";
 import { motion } from "framer-motion";
-import { Facebook, Gitlab, Linkedin } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -21,7 +21,7 @@ const Navbar = () => {
       rotate: 0
     },
     opened: {
-      rotate: 45,
+      rotate: 50,
     }
   }
 
@@ -39,7 +39,7 @@ const Navbar = () => {
       rotate: 0
     },
     opened: {
-      rotate: -45,
+      rotate: -50,
     }
   }
 
@@ -84,15 +84,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="hidden md:flex gap-4 items-center justify-center md:justify-start">
-        <Link target="_blank" className="hover:text-black hover:bg-white rounded-md p-1 transition-all" href="https://gitlab.com/bellandry.work">
-          <Gitlab className="w-6 h-6" />
-        </Link>
-        <Link target="_blank" className="hover:text-black hover:bg-white rounded-md p-1 transition-all" href="https://linkedin.com/in/bellandry">
-          <Linkedin className="w-6 h-6" />
-        </Link>
-        <Link target="_blank" className="hover:text-black hover:bg-white rounded-md p-1 transition-all" href="https://facebook.com/LaclassWebDev">
-          <Facebook className="w-6 h-6" />
-        </Link>
+        <SocialMedias />
       </div>
       <div className="md:hidden">
         <button
@@ -102,15 +94,15 @@ const Navbar = () => {
           <motion.div
             variants={topVariants}
             animate={open ? "opened" : "closed"}
-            className="w-10 h-1 bg-white rounded origin-left"></motion.div>
+            className="w-8 h-1 bg-white rounded origin-left"></motion.div>
           <motion.div
             variants={centerVariants}
             animate={open ? "opened" : "closed"}
-            className="w-10 h-1 bg-white rounded origin-left"></motion.div>
+            className="w-8 h-1 bg-white rounded origin-left"></motion.div>
           <motion.div
             variants={bottomVariants}
             animate={open ? "opened" : "closed"}
-            className="w-10 h-1 bg-white rounded origin-left"></motion.div>
+            className="w-8 h-1 bg-white rounded origin-left"></motion.div>
         </button>
         {open && (
           <motion.div
@@ -122,7 +114,7 @@ const Navbar = () => {
               stiffness: 260,
               damping: 30
             }}
-            className="absolute z-30 top-0 left-0 w-full h-full bg-gradient-radial from-gray-950 to-black flex flex-col text-4xl items-center justify-center">
+            className="absolute z-30 top-0 left-0 w-full h-full bg-gradient-radial from-gray-900 to-black flex flex-col text-4xl items-center justify-center">
             <motion.div
               variants={itemVariants}
               className="gap-y-8 flex text-yellow-50 flex-col items-center justify-center"
@@ -130,6 +122,9 @@ const Navbar = () => {
               <NavLinks
                 links={links}
               />
+              <div className="flex items-center gap-8 mt-12">
+                <SocialMedias />
+              </div>
             </motion.div>
           </motion.div>
         )}

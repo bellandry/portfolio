@@ -10,8 +10,8 @@ export const metadata: Metadata = {
   description: "Développeur Web Avec plus de 5 années d'expériences professionnelles et une expertise dans un large éventail de technologies",
   icons: {
     icon: {
-      url: "/favicon.png",
-      href: "/favicon.png"
+      url: "/favicon.ico",
+      href: "/favicon.ico"
     }
   },
 };

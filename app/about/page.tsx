@@ -9,6 +9,7 @@ const skills = [
   { id: 1, skill: "Javascript" },
   { id: 2, skill: "TypeScript" },
   { id: 3, skill: "React.js" },
+  { id: 17, skill: "VueJS" },
   { id: 4, skill: "Node.js" },
   { id: 5, skill: "Next.js" },
   { id: 6, skill: "PHP" },
@@ -45,16 +46,16 @@ const AboutPage = () => {
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}>
-      <div className="flex justify-between h-full overflow-y-scroll overflow-hidden bg-gradient-radial from-gray-950 to-black" ref={containerRef}>
-        <div className="p-4 md:p-12 lg:p-20 xl:p-56 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 w-full md:1/2">
+      <div className="flex justify-between h-full overflow-y-scroll scroll bg-gradient-radial from-gray-900 to-black" ref={containerRef}>
+        <div className="p-4 md:px-12 md:py-10 lg:px-20 lg:py-16 xl:px-56 xl:py-40 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 w-full md:1/2">
           <div className="flex flex-col gap-12 justify-center">
             <h1 className="font-bold text-2xl">Biographie</h1>
-            <p className="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis obcaecati numquam architecto dolor molestias tenetur beatae quam. Fuga, dolor temporibus repellendus ex corporis at.</p>
-            <span className="italic">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+            <p className="text-md md:text-lg">Passionné par le développement web depuis mes débuts, je suis un développeur Full Stack spécialisé dans les technologies modernes. Expert en JavaScript, TypeScript, Node.js, React, Vue.js, PHP, Laravel et bien d'autres technologies, j'apporte une approche polyvalente et efficace à chaque projet. Avec un engagement envers l'excellence technique et une veille constante des dernières tendances, je suis prêt à transformer vos idées en réalité numérique..</p>
+            <span>Citation Favorite : <span className="italic">"Dubito Ergo Sum."</span></span>
             <div className="self-end">
-              <Image src="/signature.svg" alt="signature" width={200} height={200} />
+              <Image src="/signature.svg" alt="signature" width={200} height={200} className="w-20 md:w-40 h-20 md:h-40" />
             </div>
-            <div className="h-32 w-24" >
+            <div className="h-32 w-24 animate-pulse" >
               <Mouse className="h-12 w-12 animate-bounce" />
             </div>
           </div>
@@ -77,7 +78,7 @@ const AboutPage = () => {
                 <div className="rounded p-2 text-sm cursor-pointer bg-white text-black ring-1 ring-white hover:bg-black hover:text-white transition-all" key={skill.id}>{skill.skill}</div>
               ))}
             </motion.div>
-            <div className="h-32 w-24" >
+            <div className="h-32 w-24 animate-pulse" >
               <Mouse className="h-12 w-12 animate-bounce" />
             </div>
           </div>
