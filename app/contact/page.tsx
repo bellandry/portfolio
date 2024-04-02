@@ -64,18 +64,20 @@ const ContactPage = () => {
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="h-3/5 md:h-full w-full lg:w-1/2 bg-gradient-to-l from-black to-gray-900 flex flex-col gap-8 justify-center p-10 md:p-20 rounded-xl">
-          <span>Salut Landry, </span>
+          className="h-4/5 md:h-full w-full lg:w-1/2 bg-gradient-to-l from-black to-gray-900 flex flex-col gap-8 justify-center p-10 md:p-20 rounded-xl">
+          <label htmlFor='message'>Salut Landry, </label>
           <textarea
             rows={6}
-            className="bg-transparent border-b-2 border-b-gray-600 resize-none outline-none"
+            className="bg-transparent border-b-2 border-b-gray-600 resize-none outline-0"
             name="user_message"
+            id="message"
             required
           />
-          <span>Mon adresse mail est :</span>
+          <label htmlFor='email'>Mon adresse mail est :</label>
           <input
             name="user_email"
             type="email"
+            id="email"
             className="bg-transparent border-b-2 border-b-gray-600 outline-none"
             required
           />
