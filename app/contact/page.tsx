@@ -42,7 +42,7 @@ const ContactPage = () => {
             <span className="flex justify-between p-6 ring-1 rounded-md bg-green-200 text-green-900 ring-green-800">Votre Message a bien été envoyé ! <span className="font-bold cursor-pointer px-2 ring-1 rounded-full bg-green-800 text-green-200" onClick={() => setSucccess(!success)}>x</span></span>
           )}
           {error && (
-            <span className="flex justify-between p-6 ring-1 rounded-md bg-red-200 text-red-900 ring-red-800">Une erreur inatendue s'est prodite ! <span className="font-bold cursor-pointer px-2 ring-1 rounded-full bg-red-800 text-red-200" onClick={() => setError(!error)}>x</span></span>
+            <span className="flex justify-between p-6 ring-1 rounded-md bg-red-200 text-red-900 ring-red-800">Une erreur inatendue s&apos;est prodite ! <span className="font-bold cursor-pointer px-2 ring-1 rounded-full bg-red-800 text-red-200" onClick={() => setError(!error)}>x</span></span>
           )}
         </form>
       </div>

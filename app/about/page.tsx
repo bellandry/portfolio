@@ -50,8 +50,8 @@ const AboutPage = () => {
         <div className="p-4 md:px-12 md:py-10 lg:px-20 lg:py-16 xl:px-56 xl:py-40 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 w-full md:1/2">
           <div className="flex flex-col gap-12 justify-center">
             <h1 className="font-bold text-2xl">Biographie</h1>
-            <p className="text-md md:text-lg">Passionné par le développement web depuis mes débuts, je suis un développeur Full Stack spécialisé dans les technologies modernes. Expert en JavaScript, TypeScript, Node.js, React, Vue.js, PHP, Laravel et bien d'autres technologies, j'apporte une approche polyvalente et efficace à chaque projet. Avec un engagement envers l'excellence technique et une veille constante des dernières tendances, je suis prêt à transformer vos idées en réalité numérique..</p>
-            <span>Citation Favorite : <span className="italic">"Dubito Ergo Sum."</span></span>
+            <p className="text-md md:text-lg">Passionné par le développement web depuis mes débuts, je suis un développeur Full Stack spécialisé dans les technologies modernes. Expert en JavaScript, TypeScript, Node.js, React, Vue.js, PHP, Laravel et bien d&apos;autres technologies, j&apos;apporte une approche polyvalente et efficace à chaque projet. Avec un engagement envers l&apos;excellence technique et une veille constante des dernières tendances, je suis prêt à transformer vos idées en réalité numérique..</p>
+            <span>Citation Favorite : <span className="italic">&quot;Dubito Ergo Sum.&quot;</span></span>
             <div className="self-end">
               <Image src="/signature.svg" alt="signature" width={200} height={200} className="w-20 md:w-40 h-20 md:h-40" />
             </div>
