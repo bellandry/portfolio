@@ -10,7 +10,7 @@ const projects = [
   {
     id: 1,
     title: "Projet 1",
-    description: "Lorem ipsum dolor sdsfg sdfgidsf Lorem ipsum dolorSDF SQFSit amet conLorem ipsum dolor s sd f sdfsFSDF SQFSit amet conLorem ipsum dolor s sd f sdfsFSDF SQFSit amet congdst amet cdfg dsfqgdfg on",
+    description: "Lorem ipsum dolor sdsfg sdfgidsf Lorem ipsum dolorSDF SQFSit amet conLorem ipsum dolor",
     img: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     link: "https://laclass.dev",
     color: "from-gray-950 to-gray-900"
@@ -18,7 +18,7 @@ const projects = [
   {
     id: 2,
     title: "Projet 2",
-    description: "Lorem ipsum dolor sit ametF QSTRLorem ipsum dolorSQFSit amet con Lorem ipsum dolor s sd f sdfsFSDF SQFSit amet conLorem ipsum dolor s sd f sdfsFSDF SQFSit amet conQfdys dy sd hgfds con",
+    description: "Lorem ipsum dolor sit ametF QSTRLorem ipsum dolorSQFSit amet con Lorem ipsum dolor s sd f sdfsFSDF SQFSit amet conLorem ipsum",
     img: "https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     link: "https://laclass.dev",
     color: "from-gray-900 to-gray-800"
@@ -34,7 +34,7 @@ const projects = [
   {
     id: 4,
     title: "Projet 14",
-    description: "Lorem ipsum dolor s sd f sdfsFSDF SQFSit amet conLorem ipsum dolor s sd f sdfsFSDF SQFSit amet con Lorem ipsum dolor s sd f sdfsFSDF SQFSit amet con Lorem ipsum do SQFSit amet con ",
+    description: "Lorem ipsum dolor s sd f sdfsFSDF SQFSit amet conLorem ipsum dolor s sd f sdfsFSDF SQFSit amet con Lorem ipsum dolor",
     img: "https://images.unsplash.com/photo-1502945015378-0e284ca1a5be?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     link: "https://laclass.dev",
     color: "from-gray-950 to-black"
@@ -71,7 +71,7 @@ const PortfolioPage = () => {
               <div className={`w-9/12 h-screen flex items-center justify-center border-none bg-gradient-to-r ${project.color}`} key={project.id}>
                 <div className="flex flex-col gap-8 p-4">
                   <h1 className="text-2xl font-bold md:text-6xl lg:8xl">{project.title}</h1>
-                  <div className="relative w-auto h-40 md:w-auto md:h-72">
+                  <div className="relative w-auto h-56 md:w-auto md:h-72">
                     <Image src={project.img} alt={project.title} fill className="rounded-md shadow-gray-900 shadow-lg hover:shadow-gray-800 transition-all" />
                   </div>
                   <p className="w-96 text-md">{project.description}</p>
