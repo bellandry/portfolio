@@ -72,16 +72,18 @@ const PortfolioPage = () => {
                 <div className="flex flex-col gap-8 p-4 w-3/4 md:w-3/5">
                   <h1 className="text-2xl font-bold md:text-6xl lg:8xl">{project.title}</h1>
                   <div 
-                    style={{'--image-url': `url(${project.img})`}}
-                    className={`w-full h-64 bg-[image:var(--image-url)] rounded-md bg-cover bg-no-repeat bg-center shadow-gray-900 shadow-lg hover:shadow-gray-800 transition-all`}
+                    style={{ backgroundImage: `url(${project.img})`}}
+                    className={`w-full h-64 rounded-md bg-cover bg-no-repeat bg-center shadow-gray-900 shadow-lg hover:shadow-gray-800 transition-all`}
                   ></div>
-                  <p className="w-96 text-md">{project.description}</p>
+                  <div className="w-96">
+                    <p className="w-4/5 md:w-full">{project.description}</p>
+                  </div>
                   <Link
                     target="_blank"
                     href={project.link}
                   >
-                    <div className="flex justify-end">
-                      <button className="ring-1 ring-white p-4 rounded-md hover:bg-white hover:text-black transition-all">
+                    <div className="flex justify-end w-full">
+                      <button className="ring-1 ring-white p-2 md:p-4 rounded-md hover:bg-white hover:text-black transition-all">
                         Voir la démo
                       </button>
                     </div>

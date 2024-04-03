@@ -15,10 +15,10 @@ const HeroPage = () => {
           <p className="text-sm md:text-md lg:text-xl text-center md:text-left">Hello ! Je suis Landry BELLA, développeur Full Stack, avec plus de 5 années d&apos;expérience et une expertise dans un large éventail de technologies.</p>
           <div className="flex gap-4 items-center justify-center md:justify-start">
             <Link href="/portfolio">
-              <button className="p-4 rounded-md ring-1 ring-white bg-white text-black hover:bg-black hover:text-white transition-all">Mes réalisations</button>
+              <button className="p-3 md:p-4 rounded-md ring-1 ring-white bg-white text-black hover:bg-black hover:text-white transition-all">Mes réalisations</button>
             </Link>
             <Link href="/contact">
-              <button className="p-4 rounded-md ring-1 ring-white hover:bg-white hover:text-black transition-all">Me contacter</button>
+              <button className="p-3 md:p-4 rounded-md ring-1 ring-white hover:bg-white hover:text-black transition-all">Me contacter</button>
             </Link>
           </div>
           <div className="flex gap-4 items-center justify-center md:justify-start">
