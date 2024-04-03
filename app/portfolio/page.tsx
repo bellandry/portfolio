@@ -9,10 +9,10 @@ import { useRef } from "react";
 const projects = [
   {
     id: 1,
-    title: "Projet 1",
-    description: "Lorem ipsum dolor sdsfg sdfgidsf Lorem ipsum dolorSDF SQFSit amet conLorem ipsum dolor",
-    img: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    link: "https://laclass.dev",
+    title: "Remind App",
+    description: "Application de productivité de type todoList faite avec Next.js, prisma, Tailwind CSS et Shadcn. Créez vos collections en rapport avec vos objectifs, ajoutez vos taches et trackez votre évolution",
+    img: "https://utfs.io/f/b348dbde-ccf5-4daf-8908-d396ff61b651-2lzhzv.png",
+    link: "https://remind-app.laclass.dev",
     color: "from-gray-950 to-gray-900"
   },
   {
@@ -69,13 +69,15 @@ const PortfolioPage = () => {
             <div className={`w-screen h-screen flex items-center justify-center bg-gradient-to-r from-black to-gray-950`} />
             {projects.map((project) => (
               <div className={`w-9/12 h-screen flex items-center justify-center border-none bg-gradient-to-r ${project.color}`} key={project.id}>
-                <div className="flex flex-col gap-8 p-4">
+                <div className="flex flex-col gap-8 p-4 w-3/4 md:w-3/5">
                   <h1 className="text-2xl font-bold md:text-6xl lg:8xl">{project.title}</h1>
-                  <div className="relative w-auto h-56 md:w-auto md:h-72">
-                    <Image src={project.img} alt={project.title} fill className="rounded-md shadow-gray-900 shadow-lg hover:shadow-gray-800 transition-all" />
-                  </div>
+                  <div 
+                    style={{'--image-url': `url(${project.img})`}}
+                    className={`w-full h-64 bg-[image:var(--image-url)] rounded-md bg-cover bg-no-repeat bg-center shadow-gray-900 shadow-lg hover:shadow-gray-800 transition-all`}
+                  ></div>
                   <p className="w-96 text-md">{project.description}</p>
                   <Link
+                    target="_blank"
                     href={project.link}
                   >
                     <div className="flex justify-end">
