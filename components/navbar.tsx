@@ -114,7 +114,7 @@ const Navbar = () => {
               stiffness: 260,
               damping: 30
             }}
-            className="absolute z-30 top-0 left-0 bottom-0 w-full h-full flex flex-col text-4xl items-center justify-center backdrop-blur-lg bg-gradient-radial from-slate-950/30 to-black">
+            className="absolute z-30 top-0 left-0 bottom-0 w-full h-full flex flex-col text-4xl items-center justify-center backdrop-blur-md bg-gradient-radial from-slate-950/30 to-black">
             <motion.div
               variants={itemVariants}
               className="gap-y-8 flex text-yellow-50 flex-col items-center justify-center"

@@ -6,14 +6,17 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Laclass Dev - Portfolio",
-  description: "Développeur Web Avec plus de 5 années d'expériences professionnelles et une expertise dans un large éventail de technologies",
-  icons: {
-    icon: {
-      url: "/favicon.ico",
-      href: "/favicon.ico"
-    }
+  title: {
+    template: "%s | Landry Bella",
+    default: "Landry Bella - Portfolio"
   },
+  description: "Développeur Web Avec plus de 5 années d'expériences professionnelles et une expertise dans un large éventail de technologies",
+  keywords: "developer, web-developer, react developer, portfolio, landry, bella, landry Bella, Next.js, Next.js Developer, Laravel, next.js Developer, freelance, développeur web, développeur react, vue.js,",
+  twitter: {
+    card: "summary",
+    creator: "Landry Bella",
+    images: ["/hero.png"]
+  }
 };
 
 export default function RootLayout({
