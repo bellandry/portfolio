@@ -6,17 +6,22 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://laclass.dev"),
   title: {
     template: "%s | Landry Bella",
     default: "Landry Bella - Portfolio"
   },
   description: "Développeur Web Avec plus de 5 années d'expériences professionnelles et une expertise dans un large éventail de technologies",
-  keywords: "developer, web-developer, react developer, portfolio, landry, bella, landry Bella, Next.js, Next.js Developer, Laravel, next.js Developer, freelance, développeur web, développeur react, vue.js,",
+  keywords: "laclass dev, laclass, bellandry, developer, web-developer, react developer, portfolio, landry, bella, landry Bella, Next.js, Next.js Developer, Laravel, next.js Developer, freelance, développeur web, développeur react, vue.js, landry portfolio laravel, symfony, vue.js, ",
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     creator: "Landry Bella",
-    images: ["/hero.png"]
-  }
+    images: {
+      url: "/hero.png",
+      alt: "Landry's photo"
+    }
+  },
+  category: "technology"
 };
 
 export default function RootLayout({
