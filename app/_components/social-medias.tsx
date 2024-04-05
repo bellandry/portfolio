@@ -5,13 +5,13 @@ const SocialMedias = () => {
   return (
     <>
       <Link target="_blank" className="hover:text-black hover:bg-white rounded-md p-1 transition-all" href="https://gitlab.com/bellandry.work">
-        <Gitlab className="w-6 h-6" />
+        <Gitlab className="w-6 h-6" aria-label="Gitlab" />
       </Link>
       <Link target="_blank" className="hover:text-black hover:bg-white rounded-md p-1 transition-all" href="https://linkedin.com/in/bellandry">
-        <Linkedin className="w-6 h-6" />
+        <Linkedin className="w-6 h-6" aria-label="Linkedin" />
       </Link>
       <Link target="_blank" className="hover:text-black hover:bg-white rounded-md p-1 transition-all" href="https://facebook.com/LaclassWebDev">
-        <Facebook className="w-6 h-6" />
+        <Facebook className="w-6 h-6" aria-label="Facebook" />
       </Link>
     </>
   );
