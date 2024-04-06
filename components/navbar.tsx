@@ -90,6 +90,7 @@ const Navbar = () => {
         <button
           className="w-10 h-6 flex flex-col justify-between z-40 relative"
           onClick={() => setOpen((current) => !current)}
+          aria-label="toggle button"
         >
           <motion.div
             variants={topVariants}

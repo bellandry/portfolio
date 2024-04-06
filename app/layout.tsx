@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     default: "Landry Bella - Portfolio"
   },
   description: "Développeur Web Avec plus de 5 années d'expériences professionnelles et une expertise dans un large éventail de technologies",
-  keywords: "laclass dev, laclass, bellandry, developer, web-developer, react developer, portfolio, landry, bella, landry Bella, Next.js, Next.js Developer, Laravel, next.js Developer, freelance, développeur web, développeur react, vue.js, landry portfolio laravel, symfony, vue.js, ",
+  keywords: "laclass dev, laclass, bellandry, developer, web-developer, react developer, portfolio, landry, bella, landry Bella, Next.js, Next.js Developer, Laravel, next.js Developer, freelance, développeur web, développeur react, vue.js, landry portfolio, laravel, symfony, vue.js, ",
   twitter: {
     card: "summary_large_image",
     creator: "Landry Bella",
@@ -30,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <body className={`bg-black text-white ${inter.className}`}>
         <TransitionProvider>{children}</TransitionProvider>
       </body>
