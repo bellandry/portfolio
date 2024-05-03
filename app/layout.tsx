@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://laclass.dev"),
   title: {
     template: "%s | Landry Bella",
-    default: "Landry Bella - Portfolio"
+    default: "Landry Bella - Développeur Web"
   },
   description: "Développeur Web Avec plus de 5 années d'expériences professionnelles et une expertise dans un large éventail de technologies",
   keywords: "laclass dev, laclass, bellandry, developer, web-developer, react developer, portfolio, landry, bella, landry Bella, Next.js, Next.js Developer, Laravel, next.js Developer, freelance, développeur web, développeur react, vue.js, landry portfolio, laravel, symfony, vue.js, ",
@@ -31,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={`bg-black text-white ${inter.className}`}>
+      <body className={`bg-black text-neutral-100 ${inter.className}`}>
         <TransitionProvider>{children}</TransitionProvider>
       </body>
     </html>
