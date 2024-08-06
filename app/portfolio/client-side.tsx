@@ -43,7 +43,7 @@ const PortfolioClient = () => {
   };
 
   const { scrollYProgress } = useScroll({ target: ref });
-  const x = useTransform(scrollYProgress, [0, 1], ["-20%", "-67%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["-5%", "-82%"]);
 
   return (
     <motion.div
