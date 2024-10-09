@@ -1,6 +1,7 @@
 "use client";
 import BrainElement from "@/components/brain";
 import Signature from "@/components/signature";
+import { presentation } from "@/constants";
 import { motion, useInView, useScroll } from "framer-motion";
 import { Mouse } from "lucide-react";
 import { useRef } from "react";
@@ -39,16 +40,7 @@ const AboutClient = ({ skills, experiences }: AboutClientProps) => {
           <div className="p-4 md:px-12 md:py-10 lg:px-20 lg:py-16 xl:px-56 xl:py-40 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 w-full md:1/2">
             <div className="flex flex-col gap-12 justify-center">
               <h1 className="font-bold text-2xl">Biographie</h1>
-              <p className="text-md md:text-lg">
-                Passionné par le développement web depuis mes débuts, je suis
-                aujourd&apos;hui développeur Full Stack. Expert en JavaScript,
-                TypeScript, Node.js, React, Vue.js, PHP, Laravel et bien
-                d&apos;autres technologies, j&apos;apporte une approche
-                polyvalente et efficace à chaque projet. Avec un engagement
-                envers l&apos;excellence technique et une veille constante des
-                dernières tendances, je suis prêt à transformer vos idées en
-                réalité numérique..
-              </p>
+              <p className="text-md md:text-lg">{presentation}</p>
               <span>
                 Citation Favorite :{" "}
                 <span className="italic">&quot;Dubito Ergo Sum.&quot;</span>
